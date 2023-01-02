@@ -1,0 +1,14 @@
+<div class="body">
+    Send data from parent to child and add row in the table of the child
+    <hr>
+    <br>
+    <div class="input-fields">
+        <input #idToAdd id="id-input-field" class="input-field" type="text" placeholder="Enter ID">
+        <input #nameToAdd id="name-input-field" class="input-field" type="text" placeholder="Enter Name">
+        <a class="send-button" id="send-button" [hidden]="send_button_hidden" (click)="sendData(idToAdd.value,nameToAdd.value)"> Add Data </a>
+        <a class="edit-button" id="edit-button" [hidden]="edit_button_hidden" (click)="commitEdit(idToAdd.value,nameToAdd.value)"> Edit Data </a>
+        
+    </div>
+    
+    <app-two-way-sending-child [child_message]="parent_message" (childEvent)="recieveInParent($event)"></app-two-way-sending-child>
+</div>

@@ -1,0 +1,19 @@
+.header
+{
+    padding: 12px;
+    background-color: #7a6853;
+    color: white;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+}
+
+.header-a
+{
+    padding: 10px;
+    margin: 10px;
+    background-color: #556363;
+    color: white;
+}

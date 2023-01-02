@@ -1,0 +1,12 @@
+<div class="body">
+    Parent here
+    <br>
+    <div class="input-fields">
+        <input #idToAdd id="id-input-field" class="input-field" type="text" placeholder="Enter ID">
+        <input #nameToAdd class="input-field" type="text" placeholder="Enter Name">
+        <a class="send-button" id="send-button" (click)="sendData(idToAdd.value,nameToAdd.value)"> send data </a>
+        
+    </div>
+    
+    <app-using-input-child [child_message]="parent_message"></app-using-input-child>
+</div>

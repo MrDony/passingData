@@ -1,0 +1,109 @@
+.body
+{
+    margin: 12px;
+    padding: 12px;
+    background-color: #465555;
+    color: white;
+    border-radius: 12px;
+}
+
+.output
+{
+    width: 100%;
+}
+.output-fields
+{
+    display: flex;
+    background-color: #111e1e;
+    align-items: center;
+}
+
+.output-field
+{
+    margin: 12px;
+    padding: 20px;
+    width: 33.33%;
+    background-color: #416d6d;
+}
+.delete-button
+{
+    width: 33.33%;
+    height: 20px;
+    margin: 12px;
+    padding: 20px;
+    background-color: #a31c1c;
+    cursor:pointer;
+    transition: all 0.1s;
+    transition-timing-function: ease-in-out;
+}
+.delete-button:hover
+{
+    background-color: #510e0e;
+}
+.delete-button:active
+{
+    background-color: #c82222;
+}
+
+.edit-button
+{
+    width: 33.33%;
+    height: 20px;
+    margin: 12px;
+    padding: 20px;
+    background-color: #a3621c;
+    cursor:pointer;
+    transition: all 0.1s;
+    transition-timing-function: ease-in-out;
+}
+.edit-button:hover
+{
+    background-color: #513d0e;
+}
+.edit-button:active
+{
+    background-color: #c88b22;
+}
+
+.edit-fields
+{
+    background-color: #c88b22;
+    padding: 12px;
+    margin: 12px;
+}
+.edit-field
+{
+    margin: 5px;
+    padding: 12px;
+    width: 33.33%;
+    border-radius: 5px;
+    background-color:#c6d3d3;
+    border: none;
+    transition: all 0.2s;
+    transition-timing-function: ease-in-out;
+    outline: none;
+}
+.edit-field:active
+{
+    border: none;
+}
+.edit-field:focus
+{
+    border-radius: 12px;
+    background-color: white;
+    border: none;
+}
+.commit-button
+{
+    background-color: #733f07;
+    transition: all 0.1s;
+    transition-timing-function: ease-in-out;
+    padding: 12px;
+    border-radius: 12px;
+    width: 33.33%;
+    cursor: pointer;
+}
+.commit-button:active
+{
+    background-color: #33914a;
+}
