@@ -1,0 +1,102 @@
+.body
+{
+    background-color: #2d8484;
+    color: white;
+    margin: 10px;
+    padding: 12px;
+    border-radius: 12px;
+}
+.input-fields
+{
+    display: flex;
+    align-items: center;
+}
+.input-field
+{
+    margin: 5px;
+    padding: 12px;
+    width: 33.33%;
+    border-radius: 5px;
+    background-color: #c6d3d3;
+    border: none;
+    transition: all 0.2s;
+    transition-timing-function: ease-in-out;
+    outline: none;
+}
+.input-field:active
+{
+    border: none;
+}
+.input-field:focus
+{
+    border-radius: 12px;
+    background-color: white;
+    border: none;
+}
+.send-button
+{
+    background-color: #0e2424;
+    padding: 12px;
+    width: 33.33%;
+    height: max-content;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.1s;
+    transition-timing-function: ease-in-out;
+}
+.send-button:hover
+{
+    background-color: #021616;
+}
+.send-button:active
+{
+    background-color: #197e7e;
+}
+
+
+
+
+.edit-button
+{
+    background-color: #a3621c;
+    padding: 12px;
+    width: 33.33%;
+    height: max-content;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.1s;
+    transition-timing-function: ease-in-out;
+}
+.edit-button:hover
+{
+    background-color: #160f02;
+}
+.edit-button:active
+{
+    background-color: #197e4d;
+}
+
+.input-form
+{
+    background-color: #c6d3d3;
+    border-radius: 12px;
+    padding: 12px;
+}
+.input-form-field
+{
+    padding-top: 12px;
+    background-color: #aab7b7;
+    padding: 3px;
+    margin: 12px;
+    width: 33.33%;
+}
+.input-form-field input
+{
+    padding-top: 12px;
+}
+.magic-button
+{
+    color: #021616;
+    background-color: #2d8484;
+    padding: 12px;
+}

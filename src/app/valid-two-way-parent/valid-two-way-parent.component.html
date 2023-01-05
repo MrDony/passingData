@@ -1,0 +1,32 @@
+<div class="body">
+    Send data from parent to child and add row in the table of the child
+    <hr>
+    <br>
+    <form [formGroup]="myForm" class="input-form">
+        <mat-form-field class="input-form-field">
+            <input matInput id="id-input-field" placeholder="Enter id" formControlName="id">
+            <mat-error *ngIf="get_id?.touched && get_id?.invalid">
+                ID is incorrect
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="input-form-field">
+            <input matInput id="name-input-field" placeholder="Enter name" formControlName="name">
+            <mat-error *ngIf="get_name?.touched && get_name?.invalid">
+                Name is incorrect
+            </mat-error>
+        </mat-form-field>
+
+        <button mat-raised-button class="magic-button" [hidden]="send_button_hidden" [disabled]="myForm.invalid"
+            (click)="matSendData()" style="width: 20%; background-color: black; color: white;">
+            Add
+        </button>
+        <button mat-raised-button class="magic-button" [hidden]="edit_button_hidden" [disabled]="myForm.invalid"
+            (click)="commitEdit()" style="width: 20%; background-color: #a3621c; color: #ffffff;">
+            Edit
+        </button>
+
+    </form>
+    <app-valid-two-way-child [child_message]="parent_message"
+        (childEvent)="recieveInParent($event)"></app-valid-two-way-child>
+</div>

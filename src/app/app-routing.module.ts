@@ -5,6 +5,7 @@ import { UsingInputChildComponent } from './using-input-child/using-input-child.
 import { UsingInputParentComponent } from './using-input-parent/using-input-parent.component';
 import { UsingInputComponent } from './using-input/using-input.component';
 import { UsingOutputComponent } from './using-output/using-output.component';
+import { ValidTwoWayComponent } from './valid-two-way/valid-two-way.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,9 @@ const routes: Routes = [
   },
   {
     path:'two-way-sending',component:TwoWaySendingComponent
+  },
+  {
+    path:'valid-two-way',component:ValidTwoWayComponent
   }
 ];
 

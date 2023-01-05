@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +15,16 @@ import { UsingOutputParentComponent } from './using-output-parent/using-output-p
 import { TwoWaySendingComponent } from './two-way-sending/two-way-sending.component';
 import { TwoWaySendingParentComponent } from './two-way-sending-parent/two-way-sending-parent.component';
 import { TwoWaySendingChildComponent } from './two-way-sending-child/two-way-sending-child.component';
+import { ValidTwoWayComponent } from './valid-two-way/valid-two-way.component';
+import { ValidTwoWayParentComponent } from './valid-two-way-parent/valid-two-way-parent.component';
+import { ValidTwoWayChildComponent } from './valid-two-way-child/valid-two-way-child.component';
+
+import { MatInputModule } from '@angular/material/input'
+import { MatSelectModule } from '@angular/material/select'
+import { MatButtonModule } from '@angular/material/button'
+import { MatCheckboxModule } from '@angular/material/checkbox'
+import { MatChipsModule } from '@angular/material/chips';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -29,12 +39,22 @@ import { TwoWaySendingChildComponent } from './two-way-sending-child/two-way-sen
     UsingOutputParentComponent,
     TwoWaySendingComponent,
     TwoWaySendingParentComponent,
-    TwoWaySendingChildComponent
+    TwoWaySendingChildComponent,
+    ValidTwoWayComponent,
+    ValidTwoWayParentComponent,
+    ValidTwoWayChildComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
